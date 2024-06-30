@@ -1,0 +1,32 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row_1 { grid-area: top; }
+.column_1 { grid-area: left; }
+.column_2 { grid-area: right; }
+
+#main_section {
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "left right";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main_section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 1.5em;
+}
