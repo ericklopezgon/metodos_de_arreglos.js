@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metodos de arreglos; To do List, Erick Lopez</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- css -->
      <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -12,17 +16,32 @@
 
     <section id="main_section">
         <div class="row_1">
-            top row
+            <h1>To do List</h1>
+            <hr>
+            <p>Nueva tarea</p>
+            <div class="input_btn">
+                <input type="text" id="items_input" placeholder=" Agrega un elemento a la lista">
+                <button id="add">Agregar</button>
+            </div>
         </div>
-        <div class="column_1">
-            bot left
-        </div>
-        <div class="column_2">
-              bot right  
+        <div class="row_2">
+            <div class="column_1">
+                <p>Total: <span id="total_tasks">0</span></p>
+                <br>
+                <p>Realizadas: <span id="completed_tasks">0</span></p>
+            </div>
+            <div class="column_2">
+                  <b>ID Tarea</b>
+                  <section id="render_list">
+
+                  </section>
+            </div>
         </div>
 
     </section>
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9eed3866b1.js" crossorigin="anonymous"></script>
     <!-- Script -->
      <script src="./assets/js/script.js"></script>
 </body>
